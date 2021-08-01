@@ -5,6 +5,8 @@
 
 yum install java-1.8* -y
 
+#Set the Environment variables in .bash_profile file
+
 JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64/
 
 PATH = $JAVA_HOME
