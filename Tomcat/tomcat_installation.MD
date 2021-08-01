@@ -13,19 +13,19 @@ echo $PATH       # after restart
    ```sh 
    # Create tomcat directory
    cd /opt
-   wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
-   tar -xvzf /opt/apache-tomcat-8.5.35.tar.gz
+   wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.69/bin/apache-tomcat-8.5.69.tar.gz
+   tar -xvzf /opt/apache-tomcat-8.5.69.tar.gz
    ```
 1. give executing permissions to startup.sh and shutdown.sh which are under bin. 
    ```sh
-   chmod +x /opt/apache-tomcat-8.5.35/bin/startup.sh 
+   chmod +x /opt/apache-tomcat-8.5.69/bin/startup.sh 
    shutdown.sh
    ```
 
 1. create link files for tomcat startup.sh and shutdown.sh 
    ```sh
-   ln -s /opt/apache-tomcat-8.5.35/bin/startup.sh /usr/local/bin/tomcatup
-   ln -s /opt/apache-tomcat-8.5.35/bin/shutdown.sh /usr/local/bin/tomcatdown
+   ln -s /opt/apache-tomcat-8.5.69/bin/startup.sh /usr/local/bin/tomcatup
+   ln -s /opt/apache-tomcat-8.5.69/bin/shutdown.sh /usr/local/bin/tomcatdown
    tomcatup
    ```
   #### Check point :
@@ -34,7 +34,7 @@ access tomcat application from browser on prot 8080
 
   Using unique ports for each application is a best practice in an environment. But tomcat and Jenkins runs on ports number 8080. Hence lets change tomcat port number to 8090. Change port number in conf/server.xml file under tomcat home
    ```sh
- cd /opt/apache-tomcat-8.5.35/conf
+ cd /opt/apache-tomcat-8.5.69/conf
 # update port number in the "connecter port" field in server.xml
 # restart tomcat after configuration update
 tomcatdown
