@@ -4,6 +4,7 @@
 1. EC2 instance with Java v1.8.x 
 
 yum install java-1.8*
+
 JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64/
 PATH = $JAVA_HOME
 echo $PATH       # after restart
