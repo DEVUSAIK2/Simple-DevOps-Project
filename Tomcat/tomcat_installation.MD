@@ -3,15 +3,13 @@
 ### Pre-requisites
 1. EC2 instance with Java v1.8.x 
 
-yum install java-1.8* -y
+$yum install java-1.8* -y
 
 #Set the Environment variables in .bash_profile file
-
 JAVA_HOME=/usr/lib/jvm/jre-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64/
-
 PATH = $JAVA_HOME
 
-echo $PATH       # after restart
+$echo $PATH       # after restart
 
 ### Install Apache Tomcat
 1. Download tomcat packages from  https://tomcat.apache.org/download-80.cgi onto /opt on EC2 instance
