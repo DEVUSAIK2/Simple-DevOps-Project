@@ -1,0 +1,11 @@
+#Pull Base Image
+FROM tomcat:8.0
+
+#Maintainer
+MAINTAINER "Sai"
+
+WORKDIR /usr/local/tomcat/webapps/
+RUN mkdir MyApp
+#WORKDIR /usr/local/tomcat/webapps/MyApp
+copy ./index.html /usr/local/tomcat/webapps/MyApp
+WORKDIR /usr/local/tomcat/webapps/MyApp
